@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom, rgb(23, 3, 112), black);
+}
+
+header{
+    background-color: rgb(63, 62, 62);
+    display: flex;
+    position: fixed;
+    width: 100%;
+    border-bottom: 3px solid black;
+    padding: 0 50px;
+}
+
+.Logo{
+    height: 60px;
+    position: fixed;
+}
+
+.txtPesquisar{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 0 0 5px;
+}
+
+.btnBuscar{
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(247, 121, 62) ;
+}
+
+.btnBuscar:hover{
+    background-color:rgba(254, 89, 13, 1)  ;
+    cursor: pointer;
+}
+
+main{
+    width: 85%;
+    background-color: rgb(63, 62, 62);
+    margin: auto;
+    border: 3px solid black;
+    padding: 15vh 50px 50px 5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.areaFilme{
+    display: flex;
+    width: 95%;
+    background-color: antiquewhite;
+}
+
+.txtSobreFilme{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-left: 3px solid black;
+}
+
+.banerFilme img{
+    width: 100%;
+    height: 100%;
+}
+
+.txtSobreFilme button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(247, 121, 62) ;
+    margin: 5px 0;
+}
+
+.txtSobreFilme button:hover{
+    background-color:rgba(254, 89, 13, 1)  ;
+    cursor: pointer;
+}
+
+#AreaSinopse{
+    margin: 40px 0;
+    width: 95%;
+    color: white;
+}
+
+#AreaTemporadasEpisodios{
+    width: 95%;
+    color: white;
+}
+
+#AreaSelecao{
+    padding: 5px;
+}
+
+#AreaSelecao:hover{
+    cursor: pointer;
+}
+
+.AreaEpisodios{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Episodios{
+    color: white;
+    width: 50%;
+    border: 3px solid antiquewhite;
+    padding: 15px;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    width: 100%;
+}
+
+#alternarPesquisa, .lupa
+{
+    display: none;
+}
+
+@media screen and (width>600px){
+    .AreaPesquisa{
+        margin-left: auto;
+    }
+
+    header{
+        align-items: center;
+        height: 10vh;
+    }
+}
+
+@media screen and (width<=600px){
+    header{
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .Logo{
+        height: 60px;
+        position: unset;
+        position: absolute;
+        margin-left: auto;
+    }
+
+    .AreaPesquisa{
+        margin: 65px 0 0 0;
+        max-height: 0;
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .lupa{
+        display: inline-flex;       
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        height: 40px;
+    }
+
+    #alternarPesquisa:checked ~ .AreaPesquisa
+    {
+        max-height: 100%;
+    }
+
+    main{
+        width: 100%;
+        padding: 15vh 0 0 0;
+    }
+
+    .areaFilme{
+        flex-direction: column;
+    }
+
+    .txtSobreFilme{
+        width: 100%;
+        border: none;
+    }
+
+    .Episodios{
+        width: 100%;
+    }
+}
+
+

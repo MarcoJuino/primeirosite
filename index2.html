@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        
+        <img class="Logo" src="img/logo.png" alt="">
+
+
+        <input type="checkbox" id="alternarPesquisa" />
+
+
+        <label for="alternarPesquisa">
+            <img class="lupa" src="img/lupa.png" alt="">
+        </label>
+        
+
+        <div class="AreaPesquisa">
+            <input class="txtPesquisar" type="text" placeholder="Pesquisar:">
+            <button class="btnBuscar">Buscar</button>
+        </div>
+
+        
+    </header>
+
+    <main>
+        <section class="areaFilme">
+            <figure class="banerFilme">
+                <img src="img/LaCasaDePapel.webp"alt="">
+            </figure>
+
+
+            <div class="txtSobreFilme">
+                <h1>La Casa de Papel</h1><br><br>
+                <p>Titulo Original: La Casa de Papel</p><br>
+                <p>Ano de estreia: 2017</p><br>
+                <p>Categorias: Drama Suspense Ação</p><br>
+                <p>Temporadas: 7 | Episodios: 120</p><br>
+
+                <a href="#AreaSinopse"><button>Sinopse</button></a>
+                <a href="#AreaTemporadasEpisodios"><button>Temporadas e Episodios</button></a>
+            </div>
+        </section>
+
+        <section id="AreaSinopse">
+            <h1>Sinopse</h1><br>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>  
+        </section>
+
+        <section id="AreaTemporadasEpisodios">
+            <h1>Temporadas e Episodios</h1><br><br>
+
+
+            <form action="">
+                <label for="SeleçaoTemporadas">Selecionar:</label>
+                <select name="SeleçaoTemporadas" id="AreaSelecao">
+                    <option value="1">1º Temporada</option>
+                    <option value="2">2º Temporada</option>
+                    <option value="3">3º Temporada</option>
+                </select>
+            </form><br><br>
+
+            
+
+            <div class="AreaEpisodios">
+
+                <h2>1º Temporada</h2><br><br><br>
+                
+                <div class="Episodios">
+                    <h3>SO1E01 - Piloto</h3><br>
+                    <p>Piloto - Exbiçao em: 01/04/2006 - 35mn</p><br>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p><br>
+                    <p>Observaçao</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="Episodios">
+                    <h3>SO1E02 - 8-6-1</h3><br>
+                    <p>8-6-1 - Exbiçao em: 03/05/2007 - 30mn</p><br>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p><br>
+                    <p>Observaçao</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="Episodios">
+                    <h3>SO1E03 - Car</h3><br>
+                    <p>Car - Exbiçao em: 06/07/2007 - 25mn</p><br>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p><br>
+                    <p>Observaçao</p>
+                    <p>Nenhuma observaçao encontrada!</p>
+                </div>
+                <div class="Episodios">
+                    <h3>SO1E04 - Apple</h3><br>
+                    <p>Apple - Exbiçao em: 09/08/2007 - 20mn</p><br>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p><br>
+                    <p>Observaçao</p>
+                    <p>Nenhuma observaçao encontrada!</p>
+                </div>
+                
+            </div>
+            
+        </section> 
+    </main>
+</body>
+
+</html>

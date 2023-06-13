@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to bottom, rgb(23, 3, 112), black);
+}
+
+header{
+    background-color: rgb(63, 62, 62);
+    display: flex;
+    position: fixed;
+    width: 100%;
+    border-bottom: 3px solid black;
+    padding: 0 50px;
+}
+
+.Logo{
+    height: 60px;
+    position: fixed;
+}
+
+.txtPesquisar{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 0 0 5px;
+}
+
+.btnBuscar{
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(247, 121, 62) ;
+}
+
+.btnBuscar:hover{
+    background-color:rgba(254, 89, 13, 1)  ;
+    cursor: pointer;
+}
+
+main{
+    width: 85%;
+    background-color: rgb(63, 62, 62);
+    margin: auto;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 15vh 50px 50px 5vh;
+    flex-wrap: wrap;
+}
+
+.LocalFilmes{
+    height: 300px;
+    width: 400px;
+    background-color: antiquewhite;
+    margin: 10px;
+}
+
+.LocalFilmes:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}
+
+.LocalFilmes img{
+    width: 100%;
+    height: 70%;
+}
+
+.textos{
+    height: 40%;
+    width: 100%;
+    padding: 5px 5px 0px 10px;
+    color: black;
+}
+ 
+h2{
+    margin: 0 0 5px 0;
+}
+
+#alternarPesquisa, .lupa
+{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (width>600px){
+    .AreaPesquisa{
+        margin-left: auto;
+    }
+
+    header{
+        align-items: center;
+        height: 10vh;
+    }
+}
+
+@media screen and (width<=600px){
+    header{
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .Logo{
+        height: 60px;
+        position: unset;
+        position: absolute;
+        margin-left: auto;
+    }
+
+    .AreaPesquisa{
+        margin: 80px 0 0 0;
+        max-height: 0;
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .lupa{
+        display: inline-flex;       
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        height: 40px;
+    }
+
+    #alternarPesquisa:checked ~ .AreaPesquisa
+    {
+        max-height: 100%;
+    }
+
+    main{
+        width: 100%;
+        padding: 15vh 0 0 0;
+    }
+
+}
+
